@@ -1,9 +1,9 @@
 body {
-    background-color: aqua;
+    background-color: darkcyan;
     
 }
 button{
-    background-color: orange;
+    background-color: rgb(128, 223, 183);
     padding: 1rem;
     border: none;
     outline: none;
