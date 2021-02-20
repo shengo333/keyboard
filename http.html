@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
-    <div class="box">
-
-
+    <div class="container">
+        <div>
+            <input type="number" id="input1">
+            <input type="number" id="input2">
+        </div>
+        <div>
+            <p id="output"> not calculated yet</p>
+        </div>
+        <div > 
+            <button id="sum" onclick="sum()">sum</button>
+            <button id="substrack" onclick="substract()">subtract</button>
+            <button id="multiply" onclick="multiply()">multiply</button>
+            <button id="button" onclick="devide()" >divide</button>
+        </div>
     </div>
+
+<script src="calculator.js"></script>
+
+
 </body>
 </html>

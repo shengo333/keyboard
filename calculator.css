@@ -1,0 +1,25 @@
+body {
+    background-color: aqua;
+    
+}
+button{
+    background-color: orange;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 15%;
+    text-transform: capitalize;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+input {
+    padding: 0.5rem;
+    border-radius: 5%;
+    outline: none;
+    border: none;
+} 
