@@ -1,46 +1,16 @@
 
-function sum(){
-    var input1 = document.getElementById("input1").value;
-    var input2 = document.getElementById("input2").value;
-    var output = document.getElementById("output");
-    output.innerHTML = parseInt(input1) + parseInt(input2);
+var wrapper = document.getElementById("wrapper");
 
-    console.log(input1)
-    console.log(input2)
-    console.log(output)
+var output = document.getElementById("output");
 
-}
-function substract(){
-    var input1 = document.getElementById("input1").value;
-    var input2 = document.getElementById("input2").value;
-    var output = document.getElementById("output");
-    output.innerHTML = parseInt(input1) - parseInt(input2);
 
-    console.log(input1)
-    console.log(input2)
-    console.log(output)
-
-}
-function devide(){
-    var input1 = document.getElementById("input1").value;
-    var input2 = document.getElementById("input2").value;
-    var output = document.getElementById("output");
-    output.innerHTML = parseInt(input1) / parseInt(input2);
-
-    console.log(input1)
-    console.log(input2)
-    console.log(output)
-
-}
-function multiply(){
-    var input1 = document.getElementById("input1").value;
-    var input2 = document.getElementById("input2").value;
-    var output = document.getElementById("output");
-    output.innerHTML = parseInt(input1) * parseInt(input2);
-
-    console.log(input1)
-    console.log(input2)
-    console.log(output)
-}
-
+wrapper.addEventListener("click",function(event){
+    console.log(event.target.id);
+    if (event.target.id!=="backspase"){
+        output.innerHTML+= event.target.id;
+    } else {
+        output.innerHTML = output.innerHTML.slice(0,-1);
+    }
+    
+})
 
